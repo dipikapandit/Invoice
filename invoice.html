@@ -10,62 +10,41 @@
     body {
       font-family: 'Montserrat', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-
-    header, footer {
-      color: #00005E; /* Tailwind's yellow-400 */
-    }
-    
   </style>
 </head>
 <body class="bg-gray-100">
 
   <!-- A4 Container -->
-  <div class="a4 mx-auto bg-white shadow-xl rounded-2xl border border-yellow-500 w-[210mm] min-h-[297mm] p-10 flex flex-col justify-between">
+  <div class="a4 mx-auto bg-white shadow-2xl rounded-2xl w-[210mm] min-h-[297mm] p-10 flex flex-col justify-between">
 
-    <!-- Header -->
-    <header class="border-b-2 border-yellow-500 rounded-t-2xl shadow-md p-6 flex justify-between items-start">
-      <img src="logo.png" alt="Company Logo" class="h-12">
-      <div class="text-right">
-        <h1 class="text-3xl font-bold ">QASAR AL NEIL</h1>
-        <h2 class="text-lg font-semibold">AUTOMATIC DOORS LLC</h2>
-        <div class="mt-2 text-sm">
+  <!-- Header -->
+  <header class="bg-white rounded-t-2xl shadow-md p-6 flex justify-between items-start border-b-4 border-[#000065]">
+  <!-- Logo -->
+    <div>
+      <img src="logo.png" alt="Company Logo" class="h-14">
+    </div>
 
-          <button class="bg-[#DB251C] text-gray-100 py-1 px-6 rounded">TRN: 100-TRN-98765</button>
-          <p>123 Al Maktoum Street, Dubai, UAE</p>
-          <p>info@qasaralnil.com</p>
-          <p>www.qasaralnil.com</p>
-          <p>+971 4 123 4567</p>
-
-        </div>
+    <!-- Company Info -->
+    <div class="text-right">
+      <h1 class="text-3xl font-bold text-[#000065] tracking-wide">QASAR AL NEIL</h1>
+      <h2 class="text-lg font-semibold text-gray-700">AUTOMATIC DOORS LLC</h2>
+      <div class="mt-2 text-sm space-y-1 text-gray-600">
+        <span class="inline-block bg-[#DB251C] text-white px-4 py-1 rounded shadow-sm text-xs font-semibold">TRN: 100-TRN-98765</span>
+        <p>123 Al Maktoum Street, Dubai, UAE</p>
+        <p>info@qasaralnil.com</p>
+        <p>www.qasaralnil.com</p>
+        <p>+971 4 123 4567</p>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Bill To & Document Info -->
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-      <div class="bg-white border border-yellow-500 rounded-xl shadow p-4">
-        <h3 class="text-sm font-semibold text-gray-700 mb-2">Bill To</h3>
-        <div class="text-sm text-gray-700 space-y-1">
-          <p class="font-medium">Pdiddy</p>
-          <p>TRN: 233293288478</p>
-          <p>PO Box: test, dskjdj</p>
-          <p>Address: Timro Mutu</p>
-          <p>Phone: 32893289389</p>
-        </div>
-      </div>
-      <div class="bg-white border border-yellow-500 rounded-xl shadow p-4">
-        <h3 class="text-sm font-semibold text-gray-700 mb-2">Document Info</h3>
-        <div class="text-sm text-gray-700 space-y-1">
-          <p>Date: <span class="font-medium">Sept. 9, 2025</span></p>
-          <p>Subject: <span class="font-medium">testing</span></p>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Items Table -->
     <section class="mt-6">
-      <div class="overflow-x-auto rounded-xl shadow">
+      <div class="overflow-x-auto rounded-xl shadow-lg">
         <table class="min-w-full border-collapse">
-          <thead class="bg-[#0a1a2f] text-yellow-500 uppercase text-sm tracking-wide">
+          <thead class="bg-[#000065] text-white uppercase text-sm tracking-wide">
             <tr>
               <th class="px-4 py-3 text-left">#</th>
               <th class="px-4 py-3 text-left">Description</th>
@@ -76,7 +55,7 @@
             </tr>
           </thead>
           <tbody class="text-sm text-gray-700">
-            <tr class="even:bg-gray-100 hover:bg-yellow-100/40">
+            <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">1</td>
               <td class="px-4 py-3">item 1</td>
               <td class="px-4 py-3">unit</td>
@@ -84,7 +63,7 @@
               <td class="px-4 py-3 text-right">10.00</td>
               <td class="px-4 py-3 text-right">1,000.00</td>
             </tr>
-            <tr class="even:bg-gray-100 hover:bg-yellow-100/40">
+            <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">2</td>
               <td class="px-4 py-3">item 2</td>
               <td class="px-4 py-3">unit</td>
@@ -92,7 +71,7 @@
               <td class="px-4 py-3 text-right">78.00</td>
               <td class="px-4 py-3 text-right">3,042.00</td>
             </tr>
-            <tr class="even:bg-gray-100 hover:bg-yellow-100/40">
+            <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">3</td>
               <td class="px-4 py-3">Premium Organic Cotton Bed Sheets Set</td>
               <td class="px-4 py-3">set</td>
@@ -100,7 +79,7 @@
               <td class="px-4 py-3 text-right">39.00</td>
               <td class="px-4 py-3 text-right">468.00</td>
             </tr>
-            <tr class="even:bg-gray-100 hover:bg-yellow-100/40">
+            <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">4</td>
               <td class="px-4 py-3">Ergonomic Adjustable Office Chair</td>
               <td class="px-4 py-3">unit</td>
@@ -108,7 +87,7 @@
               <td class="px-4 py-3 text-right">37.00</td>
               <td class="px-4 py-3 text-right">1,406.00</td>
             </tr>
-            <tr class="even:bg-gray-100 hover:bg-yellow-100/40">
+            <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">5</td>
               <td class="px-4 py-3">Designer Ceramic Vase</td>
               <td class="px-4 py-3">unit</td>
@@ -121,66 +100,55 @@
       </div>
     </section>
 
-    
-
     <!-- Totals and Remarks -->
     <section class="mt-6 flex flex-col md:flex-row gap-6">
       <div class="md:w-1/2">
-        <h4 class="text-sm font-semibold text-gray-800 mb-2">Remarks</h4>
-        <div class="bg-gray-50 border border-yellow-500 rounded-lg p-3 text-gray-700">
+        <h4 class="text-sm font-semibold text-[#000065] mb-2">Remarks</h4>
+        <div class="bg-white shadow-md rounded-lg p-3 text-gray-700">
           terms: 50% no: 50% lol
         </div>
       </div>
       <div class="md:w-1/2">
-        <div class="bg-gray-50 border border-yellow-500 rounded-lg shadow p-4">
+        <div class="bg-white shadow-md rounded-lg p-4">
           <div class="flex justify-between text-sm text-gray-700">
             <span>Subtotal</span><span class="font-medium">1,069,244.00</span>
           </div>
           <div class="flex justify-between text-sm text-gray-700 mt-2">
             <span>VAT (79.0%)</span><span class="font-medium">844,702.76</span>
           </div>
-          <div class="flex justify-between text-sm text-gray-700 mt-2">
+          <div class="flex justify-between text-sm mt-2">
             <span>Discount (20.0%)</span><span class="font-medium text-[#DB251C]">-213,848.80</span>
           </div>
           <div class="border-t border-dashed mt-3 pt-3 flex justify-between items-center">
-            <span class="text-sm font-semibold text-gray-800">GRAND TOTAL (AED)</span>
-            <span class="text-xl font-bold text-gray-900">1,700,097.96</span>
+            <span class="text-sm font-semibold text-[#000065]">GRAND TOTAL (AED)</span>
+            <span class="text-xl font-bold text-[#000065]">1,700,097.96</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Amount in Words -->
-
-    <section class="bg-yellow-50 border border-yellow-500 rounded-lg p-3 text-gray-700 mt-6">
-       <h4 class="text-sm font-bold">AMOUNT IN WORDS</h4>
-        <p class="text-sm mt-1 font-medium">
-          AED ONE MILLION, FIVE HUNDRED AND THIRTY-ONE THOUSAND, ONE HUNDRED AND FIFTY-SEVEN AND FORTY-ONE FILS ONLY
-        </p>
+    <section class="bg-gray-50 rounded-lg p-3 shadow-inner text-gray-700 mt-6">
+      <h4 class="text-sm font-bold text-[#000065]">AMOUNT IN WORDS</h4>
+      <p class="text-sm mt-1 font-medium">
+        AED ONE MILLION, FIVE HUNDRED AND THIRTY-ONE THOUSAND, ONE HUNDRED AND FIFTY-SEVEN AND FORTY-ONE FILS ONLY
+      </p>
     </section>
 
-
     <!-- Footer -->
-    <footer class="border-t-2 border-yellow-500 rounded-b-2xl mt-6 p-6 bg-gray-50">    
-
-
-    <div class="flex justify-evenly items-center mt-6">
-      <div class="w-48 text-center">
-        <div class="h-16 border-b border-gray-400"></div>
-        <p class="text-xs mt-1">AUTHORIZED SIGNATURE</p>
+    <footer class="mt-6 p-6 border-t-2 border-[#000065]">
+      <div class="flex justify-evenly items-center mt-6">
+        <div class="w-48 text-center">
+          <div class="h-16 border-b border-gray-400"></div>
+          <p class="text-xs mt-1">AUTHORIZED SIGNATURE</p>
+        </div>
+        <img src="logo.png" alt="Company Logo" class="h-16 opacity-20">
+        <div class="w-48 text-center">
+          <div class="h-16 border-b border-gray-400"></div>
+          <p class="text-xs mt-1">CLIENT SIGNATURE</p>
+        </div>
       </div>
-
-      <img src="logo.png" alt="Company Logo" class="h-16 opacity-20">
-
-      <div class="w-48 text-center">
-        <div class="h-16 border-b border-gray-400"></div>
-        <p class="text-xs mt-1">CLIENT SIGNATURE</p>
-      </div>
-    </div>
-
-       
-        
-      <div class="text-center text-xs text-gray-400 mt-6">
+      <div class="text-center text-xs text-gray-500 mt-6">
         QASAR AL NEIL AUTOMATIC DOORS LLC | Dubai, UAE | All rights reserved © 2025
       </div>
     </footer>
