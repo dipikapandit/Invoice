@@ -4,46 +4,87 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Quotation - QASAR AL NEIL AUTOMATIC DOORS</title>
+  <meta name="description" content="Quotation from QASAR AL NEIL Automatic Doors LLC" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Montserrat', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background-color: #f3f4f6;
+    }
+    .a4 {
+      width: 210mm;
+      min-height: 297mm;
+    }
+    @media print {
+      body {
+        background: white;
+      }
+      .a4 {
+        box-shadow: none;
+        margin: 0;
+      }
+      .no-print {
+        display: none;
+      }
     }
   </style>
 </head>
-<body class="bg-gray-100">
+<body>
 
   <!-- A4 Container -->
-  <div class="a4 mx-auto bg-white shadow-2xl rounded-2xl w-[210mm] min-h-[297mm] p-10 flex flex-col justify-between">
+  <div class="a4 mx-auto bg-white shadow-2xl rounded-2xl p-10 flex flex-col justify-between">
 
-  <!-- Header -->
-  <header class="bg-white rounded-t-2xl shadow-md p-6 flex justify-between items-start border-b-4 border-[#000065]">
-  <!-- Logo -->
-    <div>
-      <img src="logo.png" alt="Company Logo" class="h-14">
-    </div>
-
-    <!-- Company Info -->
-    <div class="text-right">
-      <h1 class="text-3xl font-bold text-[#000065] tracking-wide">QASAR AL NEIL</h1>
-      <h2 class="text-lg font-semibold text-gray-700">AUTOMATIC DOORS LLC</h2>
-      <div class="mt-2 text-sm space-y-1 text-gray-600">
-        <span class="inline-block bg-[#DB251C] text-white px-4 py-1 rounded shadow-sm text-xs font-semibold">TRN: 100-TRN-98765</span>
-        <p>123 Al Maktoum Street, Dubai, UAE</p>
-        <p>info@qasaralnil.com</p>
-        <p>www.qasaralnil.com</p>
-        <p>+971 4 123 4567</p>
+    <!-- Header -->
+    <header class="bg-white rounded-t-2xl shadow-md p-6 flex flex-col md:flex-row justify-between items-start border-b-4 border-[#000065]">
+      <!-- Logo -->
+      <div class="mb-4 md:mb-0">
+        <img src="logo.png" alt="Company Logo" class="h-14">
       </div>
-    </div>
-  </header>
 
+      <!-- Company Info -->
+      <div class="text-right">
+        <h1 class="text-3xl font-bold text-[#000065] tracking-wide">QASAR AL NEIL</h1>
+        <h2 class="text-lg font-semibold text-gray-700">AUTOMATIC DOORS LLC</h2>
+        <div class="mt-2 text-sm space-y-1 text-gray-600">
+          <span class="inline-block bg-[#DB251C] text-white px-4 py-1 rounded shadow-sm text-xs font-semibold">TRN: 100-TRN-98765</span>
+          <p>123 Al Maktoum Street, Dubai, UAE</p>
+          <p>info@qasaralnil.com</p>
+          <p>www.qasaralnil.com</p>
+          <p>+971 4 123 4567</p>
+        </div>
+      </div>
+    </header>
 
+    <!-- Bill To & Document Info -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-3">
+      <!-- Bill To -->
+      <div class="bg-white shadow-md rounded-xl p-5">
+        <h3 class="text-sm font-semibold text-[#000065] mb-3 border-b border-gray-200 pb-1">Bill To</h3>
+        <address class="text-sm text-gray-700 not-italic space-y-1">
+          <p class="font-medium">Pdiddy</p>
+          <p>TRN: 233293288478</p>
+          <p>PO Box: test, dskjdj</p>
+          <p>Address: Timro Mutu</p>
+          <p>Phone: 32893289389</p>
+        </address>
+      </div>
+
+      <!-- Document Info -->
+      <div class="bg-white shadow-md rounded-xl p-5">
+        <h3 class="text-sm font-semibold text-[#000065] mb-3 border-b border-gray-200 pb-1">Document Info</h3>
+        <div class="text-sm text-gray-700 space-y-1">
+          <p>Date: <span class="font-medium text-[#DB251C]">Sept. 9, 2025</span></p>
+          <p>Subject: <span class="font-medium text-[#DB251C]">Testing</span></p>
+        </div>
+      </div>
+    </section>
 
     <!-- Items Table -->
     <section class="mt-6">
-      <div class="overflow-x-auto rounded-xl shadow-lg">
+      <div class="overflow-x-auto shadow-lg">
         <table class="min-w-full border-collapse">
+          <caption class="sr-only">Quotation Items</caption>
           <thead class="bg-[#000065] text-white uppercase text-sm tracking-wide">
             <tr>
               <th class="px-4 py-3 text-left">#</th>
@@ -57,16 +98,16 @@
           <tbody class="text-sm text-gray-700">
             <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">1</td>
-              <td class="px-4 py-3">item 1</td>
-              <td class="px-4 py-3">unit</td>
+              <td class="px-4 py-3">Item 1</td>
+              <td class="px-4 py-3">Unit</td>
               <td class="px-4 py-3 text-right">100.00</td>
               <td class="px-4 py-3 text-right">10.00</td>
               <td class="px-4 py-3 text-right">1,000.00</td>
             </tr>
             <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">2</td>
-              <td class="px-4 py-3">item 2</td>
-              <td class="px-4 py-3">unit</td>
+              <td class="px-4 py-3">Item 2</td>
+              <td class="px-4 py-3">Unit</td>
               <td class="px-4 py-3 text-right">39.00</td>
               <td class="px-4 py-3 text-right">78.00</td>
               <td class="px-4 py-3 text-right">3,042.00</td>
@@ -74,7 +115,7 @@
             <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">3</td>
               <td class="px-4 py-3">Premium Organic Cotton Bed Sheets Set</td>
-              <td class="px-4 py-3">set</td>
+              <td class="px-4 py-3">Set</td>
               <td class="px-4 py-3 text-right">12.00</td>
               <td class="px-4 py-3 text-right">39.00</td>
               <td class="px-4 py-3 text-right">468.00</td>
@@ -82,7 +123,7 @@
             <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">4</td>
               <td class="px-4 py-3">Ergonomic Adjustable Office Chair</td>
-              <td class="px-4 py-3">unit</td>
+              <td class="px-4 py-3">Unit</td>
               <td class="px-4 py-3 text-right">38.00</td>
               <td class="px-4 py-3 text-right">37.00</td>
               <td class="px-4 py-3 text-right">1,406.00</td>
@@ -90,7 +131,7 @@
             <tr class="even:bg-gray-50 hover:bg-gray-100">
               <td class="px-4 py-3">5</td>
               <td class="px-4 py-3">Designer Ceramic Vase</td>
-              <td class="px-4 py-3">unit</td>
+              <td class="px-4 py-3">Unit</td>
               <td class="px-4 py-3 text-right">3,232.00</td>
               <td class="px-4 py-3 text-right">329.00</td>
               <td class="px-4 py-3 text-right">1,063,328.00</td>
@@ -100,38 +141,44 @@
       </div>
     </section>
 
-    <!-- Totals and Remarks -->
-    <section class="mt-6 flex flex-col md:flex-row gap-6">
-      <div class="md:w-1/2">
-        <h4 class="text-sm font-semibold text-[#000065] mb-2">Remarks</h4>
-        <div class="bg-white shadow-md rounded-lg p-3 text-gray-700">
-          terms: 50% no: 50% lol
-        </div>
+<!-- Remarks & Totals -->
+<section class="mt-6 flex flex-col md:flex-row gap-6">
+  
+  <!-- Remarks -->
+  <div class="flex-1 shadow-md rounded-lg p-6 bg-white">
+    <h4 class="text-sm font-semibold text-[#000065] mb-3 border-b border-gray-200 pb-1">Remarks</h4>
+    <p class="text-sm font-medium text-gray-700 leading-relaxed">
+      Terms: 50% advance, 50% balance on delivery. Please ensure all items are checked upon receipt.
+    </p>
+  </div>
+
+  <!-- Totals -->
+  <div class="flex-1 shadow-md rounded-lg p-6 bg-white">
+    <div class="flex flex-col space-y-2">
+      <div class="flex justify-between text-sm text-gray-700">
+        <span>Subtotal</span><span class="font-medium">1,069,244.00</span>
       </div>
-      <div class="md:w-1/2">
-        <div class="bg-white shadow-md rounded-lg p-4">
-          <div class="flex justify-between text-sm text-gray-700">
-            <span>Subtotal</span><span class="font-medium">1,069,244.00</span>
-          </div>
-          <div class="flex justify-between text-sm text-gray-700 mt-2">
-            <span>VAT (79.0%)</span><span class="font-medium">844,702.76</span>
-          </div>
-          <div class="flex justify-between text-sm mt-2">
-            <span>Discount (20.0%)</span><span class="font-medium text-[#DB251C]">-213,848.80</span>
-          </div>
-          <div class="border-t border-dashed mt-3 pt-3 flex justify-between items-center">
-            <span class="text-sm font-semibold text-[#000065]">GRAND TOTAL (AED)</span>
-            <span class="text-xl font-bold text-[#000065]">1,700,097.96</span>
-          </div>
-        </div>
+      <div class="flex justify-between text-sm text-gray-700">
+        <span>VAT (5%)</span><span class="font-medium">53,462.20</span>
       </div>
-    </section>
+      <div class="flex justify-between text-sm">
+        <span>Discount (20%)</span><span class="font-medium text-[#DB251C]">-213,848.80</span>
+      </div>
+      <div class="border-t border-dashed mt-3 pt-3 flex justify-between items-center">
+        <span class="text-sm font-semibold text-[#000065]">GRAND TOTAL (AED)</span>
+        <span class="text-xl font-bold text-[#000065]">908,857.40</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
 
     <!-- Amount in Words -->
     <section class="bg-gray-50 rounded-lg p-3 shadow-inner text-gray-700 mt-6">
       <h4 class="text-sm font-bold text-[#000065]">AMOUNT IN WORDS</h4>
       <p class="text-sm mt-1 font-medium">
-        AED ONE MILLION, FIVE HUNDRED AND THIRTY-ONE THOUSAND, ONE HUNDRED AND FIFTY-SEVEN AND FORTY-ONE FILS ONLY
+        AED NINE HUNDRED EIGHT THOUSAND, EIGHT HUNDRED FIFTY-SEVEN AND FORTY FILS ONLY
       </p>
     </section>
 
@@ -142,7 +189,7 @@
           <div class="h-16 border-b border-gray-400"></div>
           <p class="text-xs mt-1">AUTHORIZED SIGNATURE</p>
         </div>
-        <img src="logo.png" alt="Company Logo" class="h-16 opacity-20">
+        <img src="logo.png" alt="Company Logo" class="h-16 opacity-10">
         <div class="w-48 text-center">
           <div class="h-16 border-b border-gray-400"></div>
           <p class="text-xs mt-1">CLIENT SIGNATURE</p>
